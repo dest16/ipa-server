@@ -20,5 +20,5 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: dest16/ipa-server:latest
-        username: dest16
-        password: 19890830`virgo
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
